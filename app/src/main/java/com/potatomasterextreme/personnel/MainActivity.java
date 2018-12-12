@@ -38,7 +38,7 @@ import com.potatomasterextreme.personnel.infrastructure.PermissionsManager;
 public class MainActivity extends BaseActivity implements View.OnClickListener, IncomingMessageListener {
 
     public static BaseActivity mainActivity;
-    private final String NEEDED_PW = "4t4pe95wgw2ny8rn";
+    private final String NEEDED_PW = "weliveinastrangewolrd";
 
 
     private TextView mTextMessage;

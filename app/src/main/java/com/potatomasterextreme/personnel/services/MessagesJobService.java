@@ -10,13 +10,21 @@ import com.potatomasterextreme.personnel.infrastructure.MessageManager;
 import com.potatomasterextreme.personnel.infrastructure.NotificationMaster;
 import com.potatomasterextreme.personnel.receivers.MessagesServiceReceiver;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
 @RequiresApi(api = Build.VERSION_CODES.O)
 public class MessagesJobService extends JobService {
 
     @Override
     public boolean onStartJob(final JobParameters jobParameters) {
+        //12:28
         MessageManager.Main(this);
-        //NotificationMaster.createNotification(MessagesJobService.this, "Service", "Job service works: ", NotificationMaster.PRIORITY_MAX, 5);
+        Date currentTime = Calendar.getInstance().getTime();
+        DateFormat formatter = new SimpleDateFormat("HH:mm:ss dd-MM-yyyy");
+        NotificationMaster.createNotification(MessagesJobService.this, "Service", "Job service works: " + formatter.format(currentTime), NotificationMaster.PRIORITY_LOW, 10, null);
         jobFinished(jobParameters, true);
         return true;
     }
@@ -25,7 +33,6 @@ public class MessagesJobService extends JobService {
     public void onDestroy() {
         Intent broadcastIntent = new Intent(this, MessagesServiceReceiver.class);
         sendBroadcast(broadcastIntent);
-
         super.onDestroy();
     }
 

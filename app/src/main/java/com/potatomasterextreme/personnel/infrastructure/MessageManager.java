@@ -272,17 +272,18 @@ public class MessageManager {
     public static final int JOB_ID = 1;
     public static final int SEND_JOB_ID = 2;
 
+
     //Service stuff
     static public void startMessageService(Context context, int job_id) {
         //Run messages service
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             if (!isMyJobServiceRunning(context, job_id)) {
-                int delay = 60000;
-                JobScheduler jobScheduler = context.getSystemService(JobScheduler.class);
-                jobScheduler.schedule(new JobInfo.Builder(job_id, new ComponentName(context, MessagesJobService.class))
-                        .setMinimumLatency(delay)
-                        .setOverrideDeadline(delay * 2)
-                        .build());
+            int delay = 60000;
+            JobScheduler jobScheduler = context.getSystemService(JobScheduler.class);
+            jobScheduler.schedule(new JobInfo.Builder(job_id, new ComponentName(context, MessagesJobService.class))
+                    .setMinimumLatency(delay)
+                    .setOverrideDeadline(delay * 2)
+                    .build());
             }
         } else {
             MessagesService messagesService = new MessagesService();
@@ -290,6 +291,25 @@ public class MessageManager {
             if (!isMyServiceRunning(context, messagesService.getClass())) {
                 context.startService(messagesServiceIntent);
             }
+        }
+    }
+
+    //Service stuff
+    static public void forceStartMessageService(Context context, int job_id) {
+        //Run messages service
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            //if (!isMyJobServiceRunning(context, job_id)) {
+                int delay = 60000;
+                JobScheduler jobScheduler = context.getSystemService(JobScheduler.class);
+                jobScheduler.schedule(new JobInfo.Builder(job_id, new ComponentName(context, MessagesJobService.class))
+                        .setMinimumLatency(delay)
+                        .setOverrideDeadline(delay * 2)
+                        .build());
+            //}
+        } else {
+            MessagesService messagesService = new MessagesService();
+            Intent messagesServiceIntent = new Intent(context, messagesService.getClass());
+            context.startService(messagesServiceIntent);
         }
     }
 
