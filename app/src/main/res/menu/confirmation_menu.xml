@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- Settings, should always be in the overflow -->
+    <item
+        android:id="@+id/set_menu_button"
+        android:title="@string/send"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/cancel_menu_button"
+        android:title="@string/cancel"
+        android:visible="false"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/reset_menu_button"
+        android:title="@string/resend"
+        android:visible="false"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/custom_messages_menu_button"
+        android:title="@string/custom_messages"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/reminder_messages_menu_button"
+        android:title="@string/reminder_messages"
+        app:showAsAction="never" />
+</menu>

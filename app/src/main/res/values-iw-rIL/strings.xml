@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">פרסונל\n דאבל\n סרוויס</string>
+
+    <!--Data-->
+    <string name="data_format">.data</string>
+    <string name="groups_folder">groups/</string>
+    <string name="events_file">events.data</string>
+    <string name="contact_groups">contact_groups.data</string>
+    <string name="archived_events">archived_events.data</string>
+    <string name="custom_folder">custom/</string>
+    <string name="messages_file">messages</string>
+    <string name="custom_messages_file">custom_messages.data</string>
+    <string name="messages_folder">messages/</string>
+
+    <!--Titles-->
+    <string name="events">אירועים</string>
+    <string name="groups">קבוצות</string>
+
+    <!--Menus-->
+    <string name="closed_events">אירועים סגורים</string>
+    <string name="custom_messages">הודעות מותאמות</string>
+
+    <!--Event stuff-->
+    <string name="event_name">שם של האירוע</string>
+    <string name="event_description">הסבר של האירוע</string>
+    <string name="add">הוסף</string>
+    <string name="end_time">זמן סיום:</string>
+    <string name="start_time">זמן התחלה:</string>
+    <string name="number_of_workers">כמות של עובדים:</string>
+
+    <!--Warnings/Messages-->
+    <string name="title_waring">חובה שיהיה שם לאירוע</string>
+    <string name="group_name">שם הקבוצה</string>
+    <string name="cancel">בטל</string>
+    <string name="contacts_group">*אנשי קשר</string>
+    <string name="change_name">שינוי שם</string>
+    <string name="remove_group">מחק קבוצה</string>
+    <string name="edit_event">עדכן אירוע</string>
+    <string name="delete">מחק</string>
+    <string name="delete_event">מחק אירוע</string>
+    <string name="finish_event">סיים אירוע</string>
+    <string name="yes">כן</string>
+    <string name="delete_message_event">אתה בטוח שאתה רוצה למחוק את האירוע?</string>
+    <string name="edit">עדכן</string>
+    <string name="finish_message">לסיים את האירוע ולשמור אותו בארכיון?</string>
+    <string name="delete_message_group">אתה בטוח שאתה רוצה למחוק את הקבוצה?</string>
+    <string name="name_in_use_message">שם כבר בשימוש</string>
+    <string name="set">קבע</string>
+    <string name="reminder_messages">הודעות תזכורת</string>
+    <string name="confirmation_edit_text_message">לחץ כאן כדי לכתוב</string>
+    <string name="confirmation_send_message">ההודעה תשלח בתאריך המבוקש</string>
+    <string name="reset">קבע שוב</string>
+    <string name="send">שלח</string>
+    <string name="resend">שלח שוב</string>
+    <string name="message">הודעה</string>
+    <string name="add_to">הוסף ל</string>
+    <string name="contact_group">קבוצת אנשי קשר</string>
+    <string name="event_group">קבוצת אירועה</string>
+    <string name="message_contact_abssent_in_group">איש קשר לא מופיעה בשום קבוצת אנשי קשר</string>
+    <string name="message_remove_contact">הסר איש קשר מהקבוצה</string>
+    <string name="message_name_must_not_be_empty">חייב שם</string>
+    <string name="message_workers_count_1">עובדים מתוך</string>
+    <string name="message_workers_count_2">נרשמו לאירוע</string>
+    <string name="message_workers_count_3">עובדים</string>
+    <string name="message_event_confirmation_1">מתוך</string>
+    <string name="message_event_confirmation_2">עובדים אישרו הגעה</string>
+    <string name="confirm">אשר הגעה</string>
+    <string name="message_group_status_sending">שולח אישור הגעה</string>
+    <string name="message_group_status_sent">מחכה לאישור הגעה מהעובדים</string>
+    <string name="message_group_status_cancel">שליחת אישור הגעה בוטלה</string>
+    <string name="message_group_status_done">כל העובדים אישרו הגעה</string>
+    <string name="outgoing_messages">הודעות יוצות</string>
+    <string name="message_must_not_be_empty">אסור שההודעה תהיה ריקה</string>
+    <string name="clear">נקה הודעות</string>
+    <string name="copy_group">העתק קבוצה</string>
+    <string name="messages">הודעות</string>
+    <string name="enter_password">בבקשה הקלידו סיסמה:</string>
+    <string name="message_trial">ניסיון של האפליקציה אתחיל לשעה אחת</string>
+    <string name="trial">ניסיון</string>
+    <string name="message_wrong_pass">סיסמה לא נכונה</string>
+    <string name="message_correct_password">סיסמה נכונה</string>
+    <string name="message_sent_shortly">ההודעה תישלח בהקדם</string>
+    <string name="notification_title_failed_send_message">ההודעה לא נשלחה</string>
+    <string name="notification_message_failed_send_message">האפליקציה לא הצליחה לשלוח את ההודעה 100 פעם</string>
+    <string name="sending_messages">sending_messages</string>
+    <string name="reminders">מזכירים</string>
+
+    <!--Days-->
+    <string name="yesterday">אתמול</string>
+    <string name="day1">יום ראשון</string>
+    <string name="day2">יום שני</string>
+    <string name="day3">יום שלישי</string>
+    <string name="day4">יום רביעי</string>
+    <string name="day5">יום חמישי</string>
+    <string name="day6">יום שישי</string>
+    <string name="day7">יום שבת</string>
+    <string name="today">היום</string>
+    <string name="tomorrow">מחר</string>
+    <string name="in_two_days">מחרתיים</string>
+    <string name="people">אנשים</string>
+    <string name="person">בן אדם אחד</string>
+    <string name="message_ntf_msgr_1">יש לך</string>
+    <string name="message_ntf_msgr_2">הודעות חדשות מי</string>
+    <string name="message_ntf_msgr_3">הודעות חדשות</string>
+    <string name="write_your_message">תכתבו הודעה</string>
+    <string name="send_at">שלח ב:</string>
+    <string name="immediately">מייד</string>
+    <string name="remind_to_confirm_every">תזכיר כל</string>
+    <string name="hours">שעות</string>
+    <string name="the_messsage">אישור הגעה</string>
+    <string name="the_group">הקבוצע</string>
+    <string name="confirmation">אישור הגעה</string>
+    <string name="confirmed">אישר</string>
+
+</resources>

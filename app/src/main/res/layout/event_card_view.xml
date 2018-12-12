@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginRight="3dp"
+    android:layout_marginLeft="3dp">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/date_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="6dp"
+        android:visibility="gone"
+        app:cardCornerRadius="20dp">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/title"
+            android:padding="16dp"
+            android:text="(Date)"
+            android:textColor="@color/goodColor" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/main_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="2dp">
+
+        <LinearLayout
+            android:id="@+id/event_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="6dp">
+
+
+            <EditText
+                android:id="@+id/event_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="1"
+                    android:textColor="@color/textColor"
+                    android:textAlignment="viewStart"
+                    android:textSize="@dimen/font_size_title" />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/title"
+                    android:layout_marginBottom="4dp"
+                    android:text="18:00-08:00"
+                    android:textColor="@color/goodColor" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/event_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="אירוע בגני התערוכה, מתחיל ב 8:00 עד 18:00. קבוצה ראשונה מגיעה ב 8 וקבוצה שניה ב 12."
+                android:textColor="@color/textColor" />
+
+            <TextView
+                android:id="@+id/workers_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 מיתוך 10 עובדים נרשמו לאירועה"
+                android:textColor="@color/warningColor" />
+
+            <TextView
+                android:id="@+id/confirmed_workers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 מיתוך 3 עובדים אישרו אגעה"
+                android:textColor="@color/warningColor" />
+        </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+

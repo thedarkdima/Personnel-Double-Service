@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="buttonColor">#07973d</color>
+    <color name="backgroundColor">#ededed</color>
+    <color name="whiteBackgroundColor">#ffffff</color>
+
+    <color name="textColor">#000</color>
+    <color name="textSelectedColor">#ffffff</color>
+    <color name="textDisabledColor">#878787</color>
+
+    <color name="warningColor">#FF8000</color>
+    <color name="urgentColor">#ff0000</color>
+    <color name="goodColor">#08ba4a</color>
+    <color name="message_name_color">#2a54dc</color>
+</resources>

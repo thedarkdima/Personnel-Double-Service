@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- Settings, should always be in the overflow -->
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/search_white_48dp"
+        android:title="action_search"
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="android.support.v7.widget.SearchView"/>
+    <item android:id="@+id/menu_closed_events"
+        android:title="@string/closed_events"
+        app:showAsAction="never"
+        android:visible="false"/>
+</menu>

@@ -1,0 +1,6 @@
+-=Event=-
+id, name, desc, worker_count, time, date
+-=Group=-
+name, status, count
+-=Contacts=-
+id, name, phone, message = only if asked not showed everywhere
