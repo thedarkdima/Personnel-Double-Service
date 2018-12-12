@@ -20,11 +20,10 @@ public class MessagesJobService extends JobService {
 
     @Override
     public boolean onStartJob(final JobParameters jobParameters) {
-        //12:28
         MessageManager.Main(this);
-        Date currentTime = Calendar.getInstance().getTime();
-        DateFormat formatter = new SimpleDateFormat("HH:mm:ss dd-MM-yyyy");
-        NotificationMaster.createNotification(MessagesJobService.this, "Service", "Job service works: " + formatter.format(currentTime), NotificationMaster.PRIORITY_LOW, 10, null);
+        //Date currentTime = Calendar.getInstance().getTime();
+        //DateFormat formatter = new SimpleDateFormat("HH:mm:ss dd-MM-yyyy");
+        //NotificationMaster.createNotification(MessagesJobService.this, "Service", "Job service works: " + formatter.format(currentTime), NotificationMaster.PRIORITY_LOW, 10, null);
         jobFinished(jobParameters, true);
         return true;
     }
